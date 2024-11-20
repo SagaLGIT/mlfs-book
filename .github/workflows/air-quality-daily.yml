@@ -3,7 +3,7 @@ name: air-quality-daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: '22 13 * * *'
+    - cron: '58 13 * * *'
 
 jobs:
   schedule_pipelines:
@@ -12,6 +12,7 @@ jobs:
     permissions:
       pages: write
       contents: write
+      workflows: write
 
     steps:
       - name: checkout repo content
