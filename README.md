@@ -1,6 +1,13 @@
 # mlfs-book
 O'Reilly book - Building Machine Learning Systems with a feature store: batch, real-time, and LLMs
 
+# This Lab
+Link to github pages dashbord:
+https://sagalgit.github.io/mlfs-book/air-quality/
+
+- We changed the wrong order of:
+batch_data = batch_data.sort_values(by=['date']) # changed order of this
+batch_data['days_before_forecast_day'] = range(1, len(batch_data)+1) 
 
 ## ML System Examples
 
